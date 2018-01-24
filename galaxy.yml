@@ -32,9 +32,6 @@
         - install_galaxy
         - install_packages
 
-    - role: cloud_setup
-      when: cloud_setup is defined
-
     - role: ensure_postgresql_up
       tags:
         - install_galaxy
