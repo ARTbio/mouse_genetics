@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Connect to Galaxy server - Mouse Genetics</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Connect to Galaxy server";
+    var mkdocs_page_input_path = "about.md";
+    var mkdocs_page_url = "/about/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Mouse Genetics</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Connect to Galaxy server</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#galaxykickstart">GalaxyKickStart</a></li>
+    
+
+    <li class="toctree-l2"><a href="#required-ansible-version-2120">Required ansible version &gt;= 2.1.2.0</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#list-of-roles-included-in-this-playbook">List of roles included in this playbook</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../getting_started/">BWA mem tool</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../customizations/">Customizations</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installing_tools_and_workflows/">Installing tools and workflows</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Examples</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../examples/docker/">Docker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../examples/vagrant/">Vagrant</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">Frequently asked questions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../available_roles/">Available roles</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../available_variables/">Available variables</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">GalaxyKickStart Use Cases</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../metavisitor/">Metavisitor</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GKS2slurm/">GKS2slurm</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GKSfromWorflows/">GKSfromWorflows</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Mouse Genetics</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Connect to Galaxy server</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="galaxykickstart">GalaxyKickStart</h1>
+<p>GalaxyKickStart is an Ansible playbook designed to help you get one or more production-ready
+ <a href="https://usegalaxy.org/">Galaxy servers</a> based on Ubuntu within minutes, and to maintain these servers.</p>
+<h1 id="required-ansible-version-2120">Required ansible version &gt;= 2.1.2.0</h1>
+<p>Optionally, instances can be pre-loaded with tools and workflows.</p>
+<p>The playbook has been tested on </p>
+<ul>
+<li>Cloud Machines</li>
+<li>Vagrant Boxes</li>
+<li>Physical Servers </li>
+<li>Docker.</li>
+</ul>
+<p>GalaxyKickStart has been developed at the <a href="http://artbio.fr">ARTbio platform</a> and contains roles developed
+by the <a href="https://github.com/galaxyproject/">Galaxy team</a>.</p>
+<h2 id="list-of-roles-included-in-this-playbook">List of roles included in this playbook</h2>
+<ul>
+<li><a href="https://github.com/ARTbio/ensure_postgresql_up.git">ensure_postrgesql_up</a></li>
+<li><a href="https://github.com/galaxyproject/ansible-galaxy-extras">galaxy-extras role</a></li>
+<li><a href="https://github.com/galaxyproject/ansible-galaxy-tools">galaxy-tools role</a></li>
+<li><a href="https://github.com/galaxyproject/ansible-galaxy-os">galaxy-os role</a></li>
+<li><a href="https://github.com/galaxyproject/ansible-galaxy">galaxy role</a></li>
+<li><a href="https://github.com/galaxyproject/ansible-trackster">galaxy-trackster role</a></li>
+<li><a href="https://github.com/natefoo/ansible-postgresql-objects">natefoo-postgresql_objects</a></li>
+<li><a href="https://github.com/uchida/ansible-miniconda-role.git">miniconda-role</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../getting_started/" class="btn btn-neutral float-right" title="BWA mem tool">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../getting_started/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>
