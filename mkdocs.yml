@@ -1,8 +1,8 @@
-site_name: GalaxyKickStart
+site_name: Mouse Genetics
 pages:
  - Home: index.md
- - What is GalaxyKickStart: about.md
- - Getting started: getting_started.md
+ - Connect to Galaxy server: about.md
+ - BWA mem tool: getting_started.md
  - customizations.md
  - Installing tools and workflows: installing_tools_and_workflows.md
  - Examples:
