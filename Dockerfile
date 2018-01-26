@@ -36,7 +36,7 @@ RUN mkdir /etc/ssl/private-copy /var/lib/postgresql-copy && \
     /var/log/postgresql /etc/ssl/private
 
 RUN ansible-galaxy install -r requirements_roles.yml -p roles && \
-    ansible-playbook -i inventory_files/docker -c local galaxy.yml
+    ansible-playbook -i inventory_files/galaxy-kickstart -c local galaxy.yml
 
 ENV NGINX_GALAXY_LOCATION="" \
 GALAXY_CONFIG_ADMIN_USERS="admin@galaxy.org" \
