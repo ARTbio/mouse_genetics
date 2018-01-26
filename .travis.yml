@@ -1,0 +1,15 @@
+language: python
+python: '2.7'
+sudo: required
+dist: trusty
+env:
+  global:
+  - TOX_ENV=py27
+  - SITE_URL="https://artbio.github.io/Metavisitor-manual/"
+  - GH_USER_NAME="Christophe Antoniewski"
+  - GH_USER_EMAIL="drosofff@gmail.com"
+  - GH_REF="github.com/ARTbio/Metavisitor-manual.git"
+  - secure: DA8ctP4te0PJ6FWiWeS4VS95lTx4N+cYoTHAOKemrlw6a2IfEpFoyqA61ZcKp1E5pMR5kgc2GV/Id/pcMBS3+hIkkKVpPeKwLJjjbQs9DfEEveCdATzhrlNAKpCJ2iNQKKDD5c3/ZzrOBDUdEWlH/vAPkW+SftijP4kWPzgCBSn2tJN+35CTF8xrspq7q8lxmX8AOwHa65lKvsXZAzrxtHA4ASnQ59+LhzkG46Ez7K5KjNkH54SpVKfp4a2lrg7vwCTLcUwiT8LwJci7pHMc3EsPI+tn9S0gSDx5U2DkD6RNctUEBl4zYjwBqJeIxDwG9FqIwOnqVHDIxan3LvwXR82zmTVykHYRq4JJd9jX/tOyJAYL1P6jx5FEF+vJY9jek/P5GV5yRX78p5qfsoIyfLeZflRlHCsNidL3CaIXQqNGWlQ2uYzHe5NmS4opkIgoFwqZtaFyr73dvZXuYtLRJdTpp/S0bAJLuHGnLJqpNxiyOGWG4zVtE/Vtr05gecZFSqHB8r0V9KN9Cj3XQvCdIe+I+nj4qxNqwW2sdIM43X1wi+cw0rTGE2asoLz/CrXt8k76KtYysfrRbrLOMqORUcQT8a7ICpgyiCCNHKoJQxRfflaAdx/WH+hoUtnXvPlWb21B7e+htzLRvcGjxhR0ZFRvW3UCNkGj2fmhKTG1S8M=
+install: true
+script:
+- bash ./deploy.sh
