@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Metavisitor - Mouse Genetics</title>
+  <title>Training docker - Mouse Genetics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Metavisitor";
-    var mkdocs_page_input_path = "metavisitor.md";
-    var mkdocs_page_url = "/metavisitor/";
+    var mkdocs_page_name = "Training docker";
+    var mkdocs_page_input_path = "training_docker.md";
+    var mkdocs_page_url = "/training_docker/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -54,7 +54,17 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../about/">Connect to Galaxy server</a>
+    <a class="" href="../seq/">Sequencing Protocol</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../connection/">Trainee connection</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lumpy/">lumpy</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -102,25 +112,14 @@
     <a class="" href="../available_variables/">Available variables</a>
 	    </li>
           
-            <li class="toctree-l1">
+            <li class="toctree-l1 current">
 		
-    <span class="caption-text">GalaxyKickStart Use Cases</span>
-    <ul class="subnav">
-                <li class=" current">
-                    
-    <a class="current" href="./">Metavisitor</a>
+    <a class="current" href="./">Training docker</a>
     <ul class="subnav">
             
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../GKS2slurm/">GKS2slurm</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../GKSfromWorflows/">GKSfromWorflows</a>
-                </li>
+    <li class="toctree-l2"><a href="#notes-on-docker-image-mousegenetics_1705">Notes on docker image mousegenetics_17.05</a></li>
+    
+
     </ul>
 	    </li>
           
@@ -145,12 +144,8 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>GalaxyKickStart Use Cases &raquo;</li>
-        
-      
     
-    <li>Metavisitor</li>
+    <li>Training docker</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -160,16 +155,23 @@
           <div role="main">
             <div class="section">
               
-                <p><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0168397">Metavisitor</a> is a set of Galaxy tools and workflows to detect and reconstruct viral genomes from complex deep sequence datasets.</p>
-<p>Documentation on Metavisitor installation using GalaxyKickStart is available in the <a href="https://artbio.github.io/Metavisitor-manual/metavisitor_ansible/#installing-metavisitor-with-galaxykickstart-and-ansible">Metavisitor manual</a></p>
+                <h3 id="notes-on-docker-image-mousegenetics_1705">Notes on docker image mousegenetics_17.05</h3>
+<ul>
+<li>issue with 17.09 for vcfgzfile datatype --&gt; roll back to release_17.05</li>
+<li>run_datamanager does not works beyond the first step (key) in docker</li>
+<li>adapt delegated upload</li>
+<li>load manually bam_coverage tool (deeptools)</li>
+<li>make /tmp/slurm 777 - or do not export /tmp when launching the container</li>
+<li>add in galaxy.ini:</li>
+</ul>
+<pre><code>display_servers = hgw1.cse.ucsc.edu,hgw2.cse.ucsc.edu,hgw3.cse.ucsc.edu,hgw4.cse.ucsc.edu,hgw5.cse.ucsc.edu,hgw6.cse.ucsc.edu,hgw7.cse.ucsc.edu,hgw8.cse.ucsc.edu,lowepub.cse.ucsc.edu,genome.ucsc.edu
+</code></pre>
               
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../GKS2slurm/" class="btn btn-neutral float-right" title="GKS2slurm">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../available_variables/" class="btn btn-neutral" title="Available variables"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -200,8 +202,6 @@
       
         <span><a href="../available_variables/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../GKS2slurm/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

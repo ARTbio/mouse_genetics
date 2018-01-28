@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>GKSfromWorflows - Mouse Genetics</title>
+  <title>Trainee connection - Mouse Genetics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "GKSfromWorflows";
-    var mkdocs_page_input_path = "GKSfromWorflows.md";
-    var mkdocs_page_url = "/GKSfromWorflows/";
+    var mkdocs_page_name = "Trainee connection";
+    var mkdocs_page_input_path = "connection.md";
+    var mkdocs_page_url = "/connection/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -54,7 +54,20 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../about/">Connect to Galaxy server</a>
+    <a class="" href="../seq/">Sequencing Protocol</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Trainee connection</a>
+    <ul class="subnav">
+            
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lumpy/">lumpy</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -64,7 +77,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../customizations/">Customising the playbook</a>
+    <a class="" href="../customizations/">Customizations</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -82,7 +95,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../examples/vagrant/">Deploying galaxy-kickstart on local virtual machine (VM) using vagrant.</a>
+    <a class="" href="../examples/vagrant/">Vagrant</a>
                 </li>
     </ul>
 	    </li>
@@ -104,37 +117,7 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">GalaxyKickStart Use Cases</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../metavisitor/">Metavisitor</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../GKS2slurm/">What is GKS2slurm ?</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">GKSfromWorflows</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#gksfromworflows">GKSfromWorflows</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#from-galaxykickstartscripts-run">From GalaxyKickStart/scripts, run</a></li>
-        
-            <li><a class="toctree-l4" href="#adapt-the-created-inventory-file">Adapt the created inventory file</a></li>
-        
-            <li><a class="toctree-l4" href="#run-the-playbook">Run the playbook</a></li>
-        
-        </ul>
-    
-
-    </ul>
-                </li>
-    </ul>
+    <a class="" href="../training_docker/">Training docker</a>
 	    </li>
           
         </ul>
@@ -158,12 +141,8 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>GalaxyKickStart Use Cases &raquo;</li>
-        
-      
     
-    <li>GKSfromWorflows</li>
+    <li>Trainee connection</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -173,33 +152,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="gksfromworflows">GKSfromWorflows</h1>
-<p>GKSfromWorflows uses the python script <code>galaxykickstart_from_workflow.py</code> to quickly generate a GalaxyKickStart use case from one or several workflow files (<code>.ga</code>, note that these files must have been generated with galaxy &gt;= release_16.04)</p>
-<h3 id="from-galaxykickstartscripts-run">From GalaxyKickStart/scripts, run</h3>
-<pre><code>python galaxykickstart_from_workflow.py --help
-</code></pre>
-
-<p>Then</p>
-<pre><code>python galaxykickstart_from_workflow.py -w &lt;workflow1.ga&gt; &lt;workflow2.ga&gt; ... -l &lt;Panel_label&gt;
-</code></pre>
-
-<p>This creates:</p>
-<ul>
-<li>An inventory file <code>GKSfromWorkflow</code> in the <code>inventory_files</code>folder</li>
-<li>A group_vars file <code>GKSfromWorkflow</code> in the <code>group_vars</code>folder</li>
-<li>A folder <code>GKSfromWorkflow</code>in the folder <code>extra-files</code> which will contain a copy of the workflow1.ga, workflow2.ga, ... files, plus a <code>GKSfromWorkflow_tool_list.yml</code> file that contains a yml description of all tools used in the workflows.</li>
-</ul>
-<p>Note that running <code>galaxykickstart_from_workflow.py</code> overwrites these folders and files if they exist from a previous script run.</p>
-<h3 id="adapt-the-created-inventory-file">Adapt the created inventory file</h3>
-<p>Before running ansible-playbook, you have just to adapt the <code>GKSfromWorkflow</code> inventory_file <code>inventory_files/GKSfromWorkflow</code> to your own network settings (the file is preconfigured for running locally ansible-playbook on your target machine).</p>
-<p>As usual, you may also tune the <code>group_vars/all</code> file.</p>
-<h3 id="run-the-playbook">Run the playbook</h3>
-<pre><code>cd GalaxyKickStart
-ansible-galaxy install -r requirements_roles.yml -p roles
-ansible-playbook -i inventory_files/GKSfromWorkflow galaxy.yml
-</code></pre>
-
-<p>Check your running Galaxy instance after completion of the playbook. It contains the preinstalled tools as well as the workflow1, workflow2, etc....</p>
+                
               
             </div>
           </div>
@@ -207,8 +160,10 @@ ansible-playbook -i inventory_files/GKSfromWorkflow galaxy.yml
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../lumpy/" class="btn btn-neutral float-right" title="lumpy">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../GKS2slurm/" class="btn btn-neutral" title="What is GKS2slurm ?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../seq/" class="btn btn-neutral" title="Sequencing Protocol"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -234,8 +189,10 @@ ansible-playbook -i inventory_files/GKSfromWorkflow galaxy.yml
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../GKS2slurm/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../seq/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../lumpy/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

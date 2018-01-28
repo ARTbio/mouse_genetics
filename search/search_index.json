@@ -2,33 +2,53 @@
     "docs": [
         {
             "location": "/", 
-            "text": "GalaxyKickStart\n\n\nGalaxyKickStart is an \nAnsible\n playbook designed for installing, testing, deploying and \nmaintaining production-grade Galaxy instances.\n\nIn the basic configuration, this includes:\n\n\n\n\npostgresql server as database backend \n\n\nnginx proxy \n\n\nslurm cluster\n\n\n\n\nIn adition, tools and workflows can be managed.", 
+            "text": "Mouse Genetics - deep seq analysis training\n\n\nFeb 1st 2018", 
             "title": "Home"
         }, 
         {
-            "location": "/#galaxykickstart", 
-            "text": "GalaxyKickStart is an  Ansible  playbook designed for installing, testing, deploying and \nmaintaining production-grade Galaxy instances. \nIn the basic configuration, this includes:   postgresql server as database backend   nginx proxy   slurm cluster   In adition, tools and workflows can be managed.", 
-            "title": "GalaxyKickStart"
+            "location": "/#mouse-genetics-deep-seq-analysis-training", 
+            "text": "", 
+            "title": "Mouse Genetics - deep seq analysis training"
         }, 
         {
-            "location": "/about/", 
+            "location": "/#feb-1st-2018", 
+            "text": "", 
+            "title": "Feb 1st 2018"
+        }, 
+        {
+            "location": "/seq/", 
             "text": "GalaxyKickStart\n\n\nGalaxyKickStart is an Ansible playbook designed to help you get one or more production-ready\n \nGalaxy servers\n based on Ubuntu within minutes, and to maintain these servers.\n\n\nRequired ansible version \n= 2.1.2.0\n\n\nOptionally, instances can be pre-loaded with tools and workflows.\n\n\nThe playbook has been tested on \n\n\n\n\nCloud Machines\n\n\nVagrant Boxes\n\n\nPhysical Servers \n\n\nDocker.\n\n\n\n\nGalaxyKickStart has been developed at the \nARTbio platform\n and contains roles developed\nby the \nGalaxy team\n.\n\n\nList of roles included in this playbook\n\n\n\n\nensure_postrgesql_up\n\n\ngalaxy-extras role\n\n\ngalaxy-tools role\n\n\ngalaxy-os role\n\n\ngalaxy role\n\n\ngalaxy-trackster role\n\n\nnatefoo-postgresql_objects\n\n\nminiconda-role", 
-            "title": "Connect to Galaxy server"
+            "title": "Sequencing Protocol"
         }, 
         {
-            "location": "/about/#galaxykickstart", 
+            "location": "/seq/#galaxykickstart", 
             "text": "GalaxyKickStart is an Ansible playbook designed to help you get one or more production-ready\n  Galaxy servers  based on Ubuntu within minutes, and to maintain these servers.", 
             "title": "GalaxyKickStart"
         }, 
         {
-            "location": "/about/#required-ansible-version-2120", 
+            "location": "/seq/#required-ansible-version-2120", 
             "text": "Optionally, instances can be pre-loaded with tools and workflows.  The playbook has been tested on    Cloud Machines  Vagrant Boxes  Physical Servers   Docker.   GalaxyKickStart has been developed at the  ARTbio platform  and contains roles developed\nby the  Galaxy team .", 
             "title": "Required ansible version &gt;= 2.1.2.0"
         }, 
         {
-            "location": "/about/#list-of-roles-included-in-this-playbook", 
+            "location": "/seq/#list-of-roles-included-in-this-playbook", 
             "text": "ensure_postrgesql_up  galaxy-extras role  galaxy-tools role  galaxy-os role  galaxy role  galaxy-trackster role  natefoo-postgresql_objects  miniconda-role", 
             "title": "List of roles included in this playbook"
+        }, 
+        {
+            "location": "/connection/", 
+            "text": "", 
+            "title": "Trainee connection"
+        }, 
+        {
+            "location": "/lumpy/", 
+            "text": "Lumpy tool - Presentation", 
+            "title": "lumpy"
+        }, 
+        {
+            "location": "/lumpy/#lumpy-tool-presentation", 
+            "text": "", 
+            "title": "Lumpy tool - Presentation"
         }, 
         {
             "location": "/getting_started/", 
@@ -226,89 +246,14 @@
             "title": "Available variables"
         }, 
         {
-            "location": "/metavisitor/", 
-            "text": "Metavisitor\n is a set of Galaxy tools and workflows to detect and reconstruct viral genomes from complex deep sequence datasets.\n\n\nDocumentation on Metavisitor installation using GalaxyKickStart is available in the \nMetavisitor manual", 
-            "title": "Metavisitor"
+            "location": "/training_docker/", 
+            "text": "Notes on docker image mousegenetics_17.05\n\n\n\n\nissue with 17.09 for vcfgzfile datatype --\n roll back to release_17.05\n\n\nrun_datamanager does not works beyond the first step (key) in docker\n\n\nadapt delegated upload\n\n\nload manually bam_coverage tool (deeptools)\n\n\nmake /tmp/slurm 777 - or do not export /tmp when launching the container\n\n\nadd in galaxy.ini:\n\n\n\n\ndisplay_servers = hgw1.cse.ucsc.edu,hgw2.cse.ucsc.edu,hgw3.cse.ucsc.edu,hgw4.cse.ucsc.edu,hgw5.cse.ucsc.edu,hgw6.cse.ucsc.edu,hgw7.cse.ucsc.edu,hgw8.cse.ucsc.edu,lowepub.cse.ucsc.edu,genome.ucsc.edu", 
+            "title": "Training docker"
         }, 
         {
-            "location": "/GKS2slurm/", 
-            "text": "What is GKS2slurm ?\n\n\nGKS2slurm is a playbook that is played to install a multinode slurm cluster over a GalaxyKickStart single-node installation.\nThe playbook GKS2slurm \ngalaxyToSlurmCluster.yml\n was tested with multiple virtual machines (VMs) in \nStratuslab\n, \nGoogle Cloud Engine (GCE)\n and \nAmazon Web Services (AWS)\n clouds.\n\n\nInstallation of a Galaxy slurm cluster with GKS2slurm\n\n\nStep 1: Install a Galaxy server with GalaxyKickStart\n\n\n\n\n\n\nReport to the \nGetting Started\n section of this manual for the basics of GalaxyKickStart installation\n\n\n\n\n\n\ninstall any GalaxyKickStart \"flavor\" by configuring the inventory file (in inventory_files folder) and the group_vars file (in the group_vars folder) of your choice.\nFlavors currently available are \nkickstart\n, \nartimed\n and \nmetavisitor\n but other will come soon. Alternatively, you can build you own flavor by customizing a group_vars, extrafiles file and inventory file, which will install your Galaxy tools and workflows.\n\n\nin Step 1, the most important thing to keep track with is to configure your target machine with an extra volume\n\n\nIndeed GKS2slurm has be designed so that the Galaxy slurm cluster can accumulate large amount of data in the long term, which can be more easily shared with the cluster nodes and more importantly backed up.\n\n\nThus in addition of all the adaptations you will do for your own purpose (tools, workflows, etc), edit the \ngroup_vars/all\n file and adapt the \ngalaxy_persistent_directory\n variable to your extra volume which should be already formatted and mounted:\n\n\nChange\n\n\n\n\n\n\n#persistent data\ngalaxy_persistent_directory: /export # for IFB it's /root/mydisk, by default, /export\n\n\n\n\nTo\n\n\n#persistent data\ngalaxy_persistent_directory: /pathto/mounted/extravolume\n\n\n\n\n\n\nHaving configured your GalaxyKickStart installation, import the extra roles (if not already done)\n\n\n\n\nansible-galaxy install -r requirements_roles.yml -p roles\n\n\n\n\nand run the galaxy.yml playbook:\n\n\nansible-playbook --inventory-file inventory_files/\nyour_inventory_file\n galaxy.yml\n\n\n\n\nStep 2: Check the single node Galaxy installation\n\n\nIf the playbook was run successfully, connect to your Galaxy instance through http and check that you can login (admin@galaxy.org:admin), and that tools and workflows are correctly installed.\n\n\nStep 3: Moving your single node configuration to a multinode slurm configuration\n\n\n\n\nStart as many compute nodes you want for the slurm cluster and gather information from each node:\n\n\nIP address (all slurm nodes should must be accessible in the same network, ie nodes can be ping-ed from any nodes)\n\n\nhostname\n\n\nnumber of CPUs\n\n\nmemory (in MB)\n\n\n\n\n\n\n\n\nStep 3-1\n\n\nAdapt the inventory file \nslurm-kickstart\n in the inventory_files folder.\n\n\n[slurm_master]\n# adapt the following line to IP address and ssh user of the slurm master node\n192.54.201.102 ansible_ssh_user=root ansible_ssh_private_key_file=\n~/.ssh/mysshkey\n\n\n[slurm_slave]\n# adapt the following lnes to IP addresses and ssu users of the slum slave nodes\n192.54.201.98 ansible_ssh_user=root ansible_ssh_private_key_file=\n~/.ssh/mysshkey\n\n192.54.201.99 ansible_ssh_user=root ansible_ssh_private_key_file=\n~/.ssh/mysshkey\n\n192.54.201.101 ansible_ssh_user=root ansible_ssh_private_key_file=\n~/.ssh/mysshkey\n\n\n\n\n\nStep 3-2\n\n\nAdapt the group_vars file \nslurm_master\n in the \ngroup_vars\n folder.\nThis is done using the information gathered in step 3\n\n\n# nfs sharing\ncluster_ip_range: \n0.0.0.0/24\n # replace by your ip network range\n\n# slave node specifications, adapt to your set of slave nodes\nslave_node_dict:\n  - {hostname: \nslave-1\n, CPUs: \n2\n, RealMemory: \n7985\n}\n  - {hostname: \nslave-2\n, CPUs: \n2\n, RealMemory: \n7985\n}\n  - {hostname: \nslave-3\n, CPUs: \n2\n, RealMemory: \n7985\n}\n\n\n\n\nStep 3-3\n\n\nAdapt the group_vars file \nslurm_slave\n in the \ngroup_vars\n folder\n\n\n# adapt the following variable to the master slurm node IP address\nmaster_slurm_node_ip: \n192.54.201.102\n\n\n\n\n\nStep 3-4\n\n\nRun the playbook \ngalaxyToSlurmCluster.yml\n playbook.\nfrom the GalaxyKickStart directory:\n\n\nansible-playbook -i inventory_files/slurm-kickstart galaxyToSlurmCluster.yml\n\n\n\n\nNote that if you configure multiple slave nodes without prior ssh key authentification, you can run the same command with the variable ANSIBLE_HOST_KEY_CHECKING put to False:\n\n\nANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i inventory_files/slurm-kickstart galaxyToSlurmCluster.yml\n\n\n\n\nChecking slurm installation\n\n\nConnect to your master node as root and type \nsinfo\n\nRefer to slurm documentation for more investigation/control", 
-            "title": "What is GKS2slurm ?"
-        }, 
-        {
-            "location": "/GKS2slurm/#what-is-gks2slurm", 
-            "text": "GKS2slurm is a playbook that is played to install a multinode slurm cluster over a GalaxyKickStart single-node installation.\nThe playbook GKS2slurm  galaxyToSlurmCluster.yml  was tested with multiple virtual machines (VMs) in  Stratuslab ,  Google Cloud Engine (GCE)  and  Amazon Web Services (AWS)  clouds.", 
-            "title": "What is GKS2slurm ?"
-        }, 
-        {
-            "location": "/GKS2slurm/#installation-of-a-galaxy-slurm-cluster-with-gks2slurm", 
-            "text": "", 
-            "title": "Installation of a Galaxy slurm cluster with GKS2slurm"
-        }, 
-        {
-            "location": "/GKS2slurm/#step-1-install-a-galaxy-server-with-galaxykickstart", 
-            "text": "Report to the  Getting Started  section of this manual for the basics of GalaxyKickStart installation    install any GalaxyKickStart \"flavor\" by configuring the inventory file (in inventory_files folder) and the group_vars file (in the group_vars folder) of your choice.\nFlavors currently available are  kickstart ,  artimed  and  metavisitor  but other will come soon. Alternatively, you can build you own flavor by customizing a group_vars, extrafiles file and inventory file, which will install your Galaxy tools and workflows.  in Step 1, the most important thing to keep track with is to configure your target machine with an extra volume  Indeed GKS2slurm has be designed so that the Galaxy slurm cluster can accumulate large amount of data in the long term, which can be more easily shared with the cluster nodes and more importantly backed up.  Thus in addition of all the adaptations you will do for your own purpose (tools, workflows, etc), edit the  group_vars/all  file and adapt the  galaxy_persistent_directory  variable to your extra volume which should be already formatted and mounted:  Change    #persistent data\ngalaxy_persistent_directory: /export # for IFB it's /root/mydisk, by default, /export  To  #persistent data\ngalaxy_persistent_directory: /pathto/mounted/extravolume   Having configured your GalaxyKickStart installation, import the extra roles (if not already done)   ansible-galaxy install -r requirements_roles.yml -p roles  and run the galaxy.yml playbook:  ansible-playbook --inventory-file inventory_files/ your_inventory_file  galaxy.yml", 
-            "title": "Step 1: Install a Galaxy server with GalaxyKickStart"
-        }, 
-        {
-            "location": "/GKS2slurm/#step-2-check-the-single-node-galaxy-installation", 
-            "text": "If the playbook was run successfully, connect to your Galaxy instance through http and check that you can login (admin@galaxy.org:admin), and that tools and workflows are correctly installed.", 
-            "title": "Step 2: Check the single node Galaxy installation"
-        }, 
-        {
-            "location": "/GKS2slurm/#step-3-moving-your-single-node-configuration-to-a-multinode-slurm-configuration", 
-            "text": "Start as many compute nodes you want for the slurm cluster and gather information from each node:  IP address (all slurm nodes should must be accessible in the same network, ie nodes can be ping-ed from any nodes)  hostname  number of CPUs  memory (in MB)", 
-            "title": "Step 3: Moving your single node configuration to a multinode slurm configuration"
-        }, 
-        {
-            "location": "/GKS2slurm/#step-3-1", 
-            "text": "Adapt the inventory file  slurm-kickstart  in the inventory_files folder.  [slurm_master]\n# adapt the following line to IP address and ssh user of the slurm master node\n192.54.201.102 ansible_ssh_user=root ansible_ssh_private_key_file= ~/.ssh/mysshkey \n\n[slurm_slave]\n# adapt the following lnes to IP addresses and ssu users of the slum slave nodes\n192.54.201.98 ansible_ssh_user=root ansible_ssh_private_key_file= ~/.ssh/mysshkey \n192.54.201.99 ansible_ssh_user=root ansible_ssh_private_key_file= ~/.ssh/mysshkey \n192.54.201.101 ansible_ssh_user=root ansible_ssh_private_key_file= ~/.ssh/mysshkey", 
-            "title": "Step 3-1"
-        }, 
-        {
-            "location": "/GKS2slurm/#step-3-2", 
-            "text": "Adapt the group_vars file  slurm_master  in the  group_vars  folder.\nThis is done using the information gathered in step 3  # nfs sharing\ncluster_ip_range:  0.0.0.0/24  # replace by your ip network range\n\n# slave node specifications, adapt to your set of slave nodes\nslave_node_dict:\n  - {hostname:  slave-1 , CPUs:  2 , RealMemory:  7985 }\n  - {hostname:  slave-2 , CPUs:  2 , RealMemory:  7985 }\n  - {hostname:  slave-3 , CPUs:  2 , RealMemory:  7985 }", 
-            "title": "Step 3-2"
-        }, 
-        {
-            "location": "/GKS2slurm/#step-3-3", 
-            "text": "Adapt the group_vars file  slurm_slave  in the  group_vars  folder  # adapt the following variable to the master slurm node IP address\nmaster_slurm_node_ip:  192.54.201.102", 
-            "title": "Step 3-3"
-        }, 
-        {
-            "location": "/GKS2slurm/#step-3-4", 
-            "text": "Run the playbook  galaxyToSlurmCluster.yml  playbook.\nfrom the GalaxyKickStart directory:  ansible-playbook -i inventory_files/slurm-kickstart galaxyToSlurmCluster.yml  Note that if you configure multiple slave nodes without prior ssh key authentification, you can run the same command with the variable ANSIBLE_HOST_KEY_CHECKING put to False:  ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i inventory_files/slurm-kickstart galaxyToSlurmCluster.yml", 
-            "title": "Step 3-4"
-        }, 
-        {
-            "location": "/GKS2slurm/#checking-slurm-installation", 
-            "text": "Connect to your master node as root and type  sinfo \nRefer to slurm documentation for more investigation/control", 
-            "title": "Checking slurm installation"
-        }, 
-        {
-            "location": "/GKSfromWorflows/", 
-            "text": "GKSfromWorflows\n\n\nGKSfromWorflows uses the python script \ngalaxykickstart_from_workflow.py\n to quickly generate a GalaxyKickStart use case from one or several workflow files (\n.ga\n, note that these files must have been generated with galaxy \n= release_16.04)\n\n\nFrom GalaxyKickStart/scripts, run\n\n\npython galaxykickstart_from_workflow.py --help\n\n\n\n\nThen\n\n\npython galaxykickstart_from_workflow.py -w \nworkflow1.ga\n \nworkflow2.ga\n ... -l \nPanel_label\n\n\n\n\n\nThis creates:\n\n\n\n\nAn inventory file \nGKSfromWorkflow\n in the \ninventory_files\nfolder\n\n\nA group_vars file \nGKSfromWorkflow\n in the \ngroup_vars\nfolder\n\n\nA folder \nGKSfromWorkflow\nin the folder \nextra-files\n which will contain a copy of the workflow1.ga, workflow2.ga, ... files, plus a \nGKSfromWorkflow_tool_list.yml\n file that contains a yml description of all tools used in the workflows.\n\n\n\n\nNote that running \ngalaxykickstart_from_workflow.py\n overwrites these folders and files if they exist from a previous script run.\n\n\nAdapt the created inventory file\n\n\nBefore running ansible-playbook, you have just to adapt the \nGKSfromWorkflow\n inventory_file \ninventory_files/GKSfromWorkflow\n to your own network settings (the file is preconfigured for running locally ansible-playbook on your target machine).\n\n\nAs usual, you may also tune the \ngroup_vars/all\n file.\n\n\nRun the playbook\n\n\ncd GalaxyKickStart\nansible-galaxy install -r requirements_roles.yml -p roles\nansible-playbook -i inventory_files/GKSfromWorkflow galaxy.yml\n\n\n\n\nCheck your running Galaxy instance after completion of the playbook. It contains the preinstalled tools as well as the workflow1, workflow2, etc....", 
-            "title": "GKSfromWorflows"
-        }, 
-        {
-            "location": "/GKSfromWorflows/#gksfromworflows", 
-            "text": "GKSfromWorflows uses the python script  galaxykickstart_from_workflow.py  to quickly generate a GalaxyKickStart use case from one or several workflow files ( .ga , note that these files must have been generated with galaxy  = release_16.04)", 
-            "title": "GKSfromWorflows"
-        }, 
-        {
-            "location": "/GKSfromWorflows/#from-galaxykickstartscripts-run", 
-            "text": "python galaxykickstart_from_workflow.py --help  Then  python galaxykickstart_from_workflow.py -w  workflow1.ga   workflow2.ga  ... -l  Panel_label   This creates:   An inventory file  GKSfromWorkflow  in the  inventory_files folder  A group_vars file  GKSfromWorkflow  in the  group_vars folder  A folder  GKSfromWorkflow in the folder  extra-files  which will contain a copy of the workflow1.ga, workflow2.ga, ... files, plus a  GKSfromWorkflow_tool_list.yml  file that contains a yml description of all tools used in the workflows.   Note that running  galaxykickstart_from_workflow.py  overwrites these folders and files if they exist from a previous script run.", 
-            "title": "From GalaxyKickStart/scripts, run"
-        }, 
-        {
-            "location": "/GKSfromWorflows/#adapt-the-created-inventory-file", 
-            "text": "Before running ansible-playbook, you have just to adapt the  GKSfromWorkflow  inventory_file  inventory_files/GKSfromWorkflow  to your own network settings (the file is preconfigured for running locally ansible-playbook on your target machine).  As usual, you may also tune the  group_vars/all  file.", 
-            "title": "Adapt the created inventory file"
-        }, 
-        {
-            "location": "/GKSfromWorflows/#run-the-playbook", 
-            "text": "cd GalaxyKickStart\nansible-galaxy install -r requirements_roles.yml -p roles\nansible-playbook -i inventory_files/GKSfromWorkflow galaxy.yml  Check your running Galaxy instance after completion of the playbook. It contains the preinstalled tools as well as the workflow1, workflow2, etc....", 
-            "title": "Run the playbook"
+            "location": "/training_docker/#notes-on-docker-image-mousegenetics_1705", 
+            "text": "issue with 17.09 for vcfgzfile datatype --  roll back to release_17.05  run_datamanager does not works beyond the first step (key) in docker  adapt delegated upload  load manually bam_coverage tool (deeptools)  make /tmp/slurm 777 - or do not export /tmp when launching the container  add in galaxy.ini:   display_servers = hgw1.cse.ucsc.edu,hgw2.cse.ucsc.edu,hgw3.cse.ucsc.edu,hgw4.cse.ucsc.edu,hgw5.cse.ucsc.edu,hgw6.cse.ucsc.edu,hgw7.cse.ucsc.edu,hgw8.cse.ucsc.edu,lowepub.cse.ucsc.edu,genome.ucsc.edu", 
+            "title": "Notes on docker image mousegenetics_17.05"
         }
     ]
 }
