@@ -1,7 +1,9 @@
 site_name: Mouse Genetics
 pages:
  - Home: index.md
- - Connect to Galaxy server: about.md
+ - Sequencing Protocol: seq.md
+ - Trainee connection: connection.md
+ - lumpy: lumpy.md
  - BWA mem tool: getting_started.md
  - customizations.md
  - Installing tools and workflows: installing_tools_and_workflows.md
@@ -11,8 +13,5 @@ pages:
  - Frequently asked questions: faq.md
  - Available roles: available_roles.md
  - Available variables: available_variables.md
- - GalaxyKickStart Use Cases: 
-   - metavisitor.md
-   - GKS2slurm.md
-   - GKSfromWorflows.md
+ - training_docker.md
 theme: readthedocs
