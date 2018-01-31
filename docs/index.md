@@ -8,5 +8,7 @@ We will use the tool **[lumpy](https://genomebiology.biomedcentral.com/articles/
 to find putative translocations sites in patients genomes
 and we will visualize the position of these sites in the genome.
 
+This training manual is available in a better resolution as a [Google Slide doc](https://docs.google.com/presentation/d/1vbjuqt6Gn-2VWDjCwX_5rKATOeb0Rt8b030A_SVl3FE)
+
 Codes for deploying the Galaxy instances used in the session is available in
 [GitHub](https://github.com/ARTbio/mouse_genetics)
