@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,15 @@
     
     <url>
      <loc>/seq/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <lastmod>2018-01-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/lumpy_approach/</loc>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +28,23 @@
     
     <url>
      <loc>/connection/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <lastmod>2018-01-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/import/</loc>
+     <lastmod>2018-01-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/BWA/</loc>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -28,79 +52,47 @@
     
     <url>
      <loc>/lumpy/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/getting_started/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <loc>/filter_vcf/</loc>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/customizations/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <loc>/workflow/</loc>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/installing_tools_and_workflows/</loc>
-     <lastmod>2018-01-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-        
-    <url>
-     <loc>/examples/docker/</loc>
-     <lastmod>2018-01-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/examples/vagrant/</loc>
-     <lastmod>2018-01-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-    <url>
-     <loc>/faq/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <loc>/run_workflow/</loc>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/available_roles/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <loc>/coverage/</loc>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/available_variables/</loc>
-     <lastmod>2018-01-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/training_docker/</loc>
-     <lastmod>2018-01-28</lastmod>
+     <loc>/visualisation/</loc>
+     <lastmod>2018-01-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
