@@ -1,30 +1,12 @@
-# GalaxyKickStart
+## DNA libraries and sequencing protocol for patient samples
 
-GalaxyKickStart is an Ansible playbook designed to help you get one or more production-ready
- [Galaxy servers](https://usegalaxy.org/) based on Ubuntu within minutes, and to maintain these servers.
+- Bone marrow samples from patients with Acute Lymphoid Leukemia (ALL)
+- Genomic DNA from bone marrow cells
+- DNA fragmentation (expected ~200-500nt long)
+- Selection of DNA fragments :
+  - 2 regions of several dozens of kb centered on BCR and ABL1
+- Library preparation
+- Sequencing of both ends of fragments: Paired-End sequencing
+  - see figure below
 
-# Required ansible version >= 2.1.2.0
-
-Optionally, instances can be pre-loaded with tools and workflows.
-
-The playbook has been tested on 
-
-- Cloud Machines
-- Vagrant Boxes
-- Physical Servers 
-- Docker.
-
-GalaxyKickStart has been developed at the [ARTbio platform](http://artbio.fr) and contains roles developed
-by the [Galaxy team](https://github.com/galaxyproject/).
-
-List of roles included in this playbook
-------
-
-- [ensure_postrgesql_up](https://github.com/ARTbio/ensure_postgresql_up.git)
-- [galaxy-extras role](https://github.com/galaxyproject/ansible-galaxy-extras)
-- [galaxy-tools role](https://github.com/galaxyproject/ansible-galaxy-tools)
-- [galaxy-os role](https://github.com/galaxyproject/ansible-galaxy-os)
-- [galaxy role](https://github.com/galaxyproject/ansible-galaxy)
-- [galaxy-trackster role](https://github.com/galaxyproject/ansible-trackster)
-- [natefoo-postgresql_objects](https://github.com/natefoo/ansible-postgresql-objects)
-- [miniconda-role](https://github.com/uchida/ansible-miniconda-role.git)
+![](images/sequencing.png)

@@ -2,16 +2,14 @@ site_name: Mouse Genetics
 pages:
  - Home: index.md
  - Sequencing Protocol: seq.md
+ - Lumpy approach: lumpy_approach.md
  - Trainee connection: connection.md
- - lumpy: lumpy.md
- - BWA mem tool: getting_started.md
- - customizations.md
- - Installing tools and workflows: installing_tools_and_workflows.md
- - Examples:
-   - examples/docker.md
-   - examples/vagrant.md
- - Frequently asked questions: faq.md
- - Available roles: available_roles.md
- - Available variables: available_variables.md
- - training_docker.md
+ - Import datasets: import.md
+ - BWA mem tool: BWA.md
+ - lumpy analysis: lumpy.md
+ - Filter VCF file for visualization: filter_vcf.md
+ - Generate workflow from history: workflow.md
+ - Run the workflow: run_workflow.md
+ - Compute genome coverage: coverage.md
+ - Visualisation in UCSC Genome Browser: visualisation.md
 theme: readthedocs

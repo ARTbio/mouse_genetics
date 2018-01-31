@@ -1,1 +1,3 @@
-### Lumpy tool - Presentation
+## Lumpy tool - lumpy step
+
+![](images/lumpy.png)
