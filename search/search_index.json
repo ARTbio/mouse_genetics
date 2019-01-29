@@ -37,13 +37,53 @@
         }, 
         {
             "location": "/connection/", 
-            "text": "Connect to your Galaxy server account\n\n\nYou are going to work as student pairs each of these pairs having its own Galaxy account.\n\n\nPairs login  | server url\n\n\nmousegene\n\n\nAs soon as you reach the Galaxy server home page, register for a new account:\n\n\n\n\nmenu \"Authenticate and Register\"\n\n\n--\n register\n\n\nPut an email address, a password and a user name (in small case), and remember them.\n\n\nYou will be redirected to your newly created account", 
+            "text": "Connect to your Galaxy server account\n\n\nYou are going to work as student pairs, each of these pairs having its own Galaxy account.\n\n\nAccount | server\n\n\nmg-1 | http://lbcd41.snv.jussieu.fr\n\n\nmg-2 | http://lbcd41.snv.jussieu.fr\n\n\nmg-3 | http://artbio.snv.jussieu.fr\n\n\nmg-4 | http://artbio.snv.jussieu.fr\n\n\nmg-5 | http://artbio.snv.jussieu.fr\n\n\nmg-6 | http://artbio.snv.jussieu.fr\n\n\nmg-7 | http://artbio.snv.jussieu.fr\n\n\nYour password will be communicated during the training session", 
             "title": "Trainee connection"
         }, 
         {
             "location": "/connection/#connect-to-your-galaxy-server-account", 
-            "text": "You are going to work as student pairs each of these pairs having its own Galaxy account.  Pairs login  | server url  mousegene  As soon as you reach the Galaxy server home page, register for a new account:   menu \"Authenticate and Register\"  --  register  Put an email address, a password and a user name (in small case), and remember them.  You will be redirected to your newly created account", 
+            "text": "You are going to work as student pairs, each of these pairs having its own Galaxy account.", 
             "title": "Connect to your Galaxy server account"
+        }, 
+        {
+            "location": "/connection/#account-server", 
+            "text": "", 
+            "title": "Account | server"
+        }, 
+        {
+            "location": "/connection/#mg-1-httplbcd41snvjussieufr", 
+            "text": "", 
+            "title": "mg-1 | http://lbcd41.snv.jussieu.fr"
+        }, 
+        {
+            "location": "/connection/#mg-2-httplbcd41snvjussieufr", 
+            "text": "", 
+            "title": "mg-2 | http://lbcd41.snv.jussieu.fr"
+        }, 
+        {
+            "location": "/connection/#mg-3-httpartbiosnvjussieufr", 
+            "text": "", 
+            "title": "mg-3 | http://artbio.snv.jussieu.fr"
+        }, 
+        {
+            "location": "/connection/#mg-4-httpartbiosnvjussieufr", 
+            "text": "", 
+            "title": "mg-4 | http://artbio.snv.jussieu.fr"
+        }, 
+        {
+            "location": "/connection/#mg-5-httpartbiosnvjussieufr", 
+            "text": "", 
+            "title": "mg-5 | http://artbio.snv.jussieu.fr"
+        }, 
+        {
+            "location": "/connection/#mg-6-httpartbiosnvjussieufr", 
+            "text": "", 
+            "title": "mg-6 | http://artbio.snv.jussieu.fr"
+        }, 
+        {
+            "location": "/connection/#mg-7-httpartbiosnvjussieufr", 
+            "text": "Your password will be communicated during the training session", 
+            "title": "mg-7 | http://artbio.snv.jussieu.fr"
         }, 
         {
             "location": "/import/", 
