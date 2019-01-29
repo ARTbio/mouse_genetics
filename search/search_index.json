@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Mouse Genetics - deep seq analysis training\n\n\nFeb 1st 2018\n\n\nIn this training session, we are going to analyse 2 datasets from two patients in order\nto find translocations between BCR (chr22) and ABL1 (chr9).\nWe will visualize the coverage of these two genes by the datasets sequencing reads.\nWe will use the tool \nlumpy\n\nto find putative translocations sites in patients genomes\nand we will visualize the position of these sites in the genome.\n\n\nThis training manual is available in a better resolution as a \nGoogle Slide doc\n\n\nCodes for deploying the Galaxy instances used in the session is available in\n\nGitHub", 
+            "text": "Mouse Genetics - deep seq analysis training\n\n\nFeb 1st 2019\n\n\nIn this training session, we are going to analyse 2 datasets from two patients in order\nto find translocations between BCR (chr22) and ABL1 (chr9).\n\n\nWe will visualize the coverage of these two genes by the datasets sequencing reads.\n\n\nWe will use the tool \nlumpy\n\nto find putative translocations sites in patients genomes\nand we will visualize the position of these sites in the genome.\n\n\nThis training manual is available in a better resolution as a \nGoogle Slide doc", 
             "title": "Home"
         }, 
         {
@@ -11,18 +11,18 @@
             "title": "Mouse Genetics - deep seq analysis training"
         }, 
         {
-            "location": "/#feb-1st-2018", 
-            "text": "In this training session, we are going to analyse 2 datasets from two patients in order\nto find translocations between BCR (chr22) and ABL1 (chr9).\nWe will visualize the coverage of these two genes by the datasets sequencing reads.\nWe will use the tool  lumpy \nto find putative translocations sites in patients genomes\nand we will visualize the position of these sites in the genome.  This training manual is available in a better resolution as a  Google Slide doc  Codes for deploying the Galaxy instances used in the session is available in GitHub", 
-            "title": "Feb 1st 2018"
+            "location": "/#feb-1st-2019", 
+            "text": "In this training session, we are going to analyse 2 datasets from two patients in order\nto find translocations between BCR (chr22) and ABL1 (chr9).  We will visualize the coverage of these two genes by the datasets sequencing reads.  We will use the tool  lumpy \nto find putative translocations sites in patients genomes\nand we will visualize the position of these sites in the genome.  This training manual is available in a better resolution as a  Google Slide doc", 
+            "title": "Feb 1st 2019"
         }, 
         {
             "location": "/seq/", 
-            "text": "DNA libraries and sequencing protocol for patient samples\n\n\n\n\nBone marrow samples from patients with Acute Lymphoid Leukemia (ALL)\n\n\nGenomic DNA from bone marrow cells\n\n\nDNA fragmentation (expected ~200-500nt long)\n\n\nSelection of DNA fragments :\n\n\n2 regions of several dozens of kb centered on BCR and ABL1\n\n\nLibrary preparation\n\n\nSequencing of both ends of fragments: Paired-End sequencing\n\n\nsee figure below", 
+            "text": "DNA libraries and sequencing protocol for patient samples\n\n\n\n\nBone marrow samples from patients with Acute Lymphoid Leukemia (ALL)\n\n\nGenomic DNA from bone marrow cells\n\n\nDNA fragmentation (expected ~200-500nt long)\n\n\nSelection of DNA fragments :\n    2 regions of several dozens of kb centered on BCR and ABL1\n\n\nLibrary preparation\n\n\nSequencing of both ends of fragments: Paired-End sequencing (see figure below)", 
             "title": "Sequencing Protocol"
         }, 
         {
             "location": "/seq/#dna-libraries-and-sequencing-protocol-for-patient-samples", 
-            "text": "Bone marrow samples from patients with Acute Lymphoid Leukemia (ALL)  Genomic DNA from bone marrow cells  DNA fragmentation (expected ~200-500nt long)  Selection of DNA fragments :  2 regions of several dozens of kb centered on BCR and ABL1  Library preparation  Sequencing of both ends of fragments: Paired-End sequencing  see figure below", 
+            "text": "Bone marrow samples from patients with Acute Lymphoid Leukemia (ALL)  Genomic DNA from bone marrow cells  DNA fragmentation (expected ~200-500nt long)  Selection of DNA fragments :\n    2 regions of several dozens of kb centered on BCR and ABL1  Library preparation  Sequencing of both ends of fragments: Paired-End sequencing (see figure below)", 
             "title": "DNA libraries and sequencing protocol for patient samples"
         }, 
         {
@@ -37,13 +37,13 @@
         }, 
         {
             "location": "/connection/", 
-            "text": "Connect to your Galaxy server and register\n\n\nEach student will work with his own Galaxy server account.\nThe URL of your Galaxy server is available in this \ntable\n\n\nAs soon as you reach the Galaxy server home page, register for a new account:\n\n\n\n\nmenu \"Authenticate and Register\"\n\n\n--\n register\n\n\nPut an email address, a password and a user name (in small case), and remember them.\n\n\nYou will be redirected to your newly created account", 
+            "text": "Connect to your Galaxy server account\n\n\nYou are going to work as student pairs each of these pairs having its own Galaxy account.\n\n\nPairs login  | server url\n\n\nmousegene\n\n\nAs soon as you reach the Galaxy server home page, register for a new account:\n\n\n\n\nmenu \"Authenticate and Register\"\n\n\n--\n register\n\n\nPut an email address, a password and a user name (in small case), and remember them.\n\n\nYou will be redirected to your newly created account", 
             "title": "Trainee connection"
         }, 
         {
-            "location": "/connection/#connect-to-your-galaxy-server-and-register", 
-            "text": "Each student will work with his own Galaxy server account.\nThe URL of your Galaxy server is available in this  table  As soon as you reach the Galaxy server home page, register for a new account:   menu \"Authenticate and Register\"  --  register  Put an email address, a password and a user name (in small case), and remember them.  You will be redirected to your newly created account", 
-            "title": "Connect to your Galaxy server and register"
+            "location": "/connection/#connect-to-your-galaxy-server-account", 
+            "text": "You are going to work as student pairs each of these pairs having its own Galaxy account.  Pairs login  | server url  mousegene  As soon as you reach the Galaxy server home page, register for a new account:   menu \"Authenticate and Register\"  --  register  Put an email address, a password and a user name (in small case), and remember them.  You will be redirected to your newly created account", 
+            "title": "Connect to your Galaxy server account"
         }, 
         {
             "location": "/import/", 
