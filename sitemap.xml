@@ -1,100 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
      <loc>/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/seq/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/lumpy_approach/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/connection/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/import/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/BWA/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/lumpy/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/filter_vcf/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/workflow/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/run_workflow/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/coverage/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/visualisation/</loc>
-     <lastmod>2018-01-31</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
 </urlset>
