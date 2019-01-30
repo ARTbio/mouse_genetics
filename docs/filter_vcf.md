@@ -60,7 +60,7 @@ Pay extra attention to the version of the tool, because there is a number of con
 
 ![](images/concatenate.png)
 
-### 4. Rename the dataset within the last dataset collection.
+### 5. Rename the dataset within the last dataset collection.
 
 Here we will rename the dataset of the last dataset collection. Here, there is something that maybe
 tricky to understand.
