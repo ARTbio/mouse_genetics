@@ -41,17 +41,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/coverage/</loc>
+     <lastmod>2019-01-30</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/workflow/</loc>
      <lastmod>2019-01-30</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/run_workflow/</loc>
-     <lastmod>2019-01-30</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/coverage/</loc>
      <lastmod>2019-01-30</lastmod>
      <changefreq>daily</changefreq>
     </url>

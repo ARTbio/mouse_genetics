@@ -37,7 +37,7 @@
         }, 
         {
             "location": "/connection/", 
-            "text": "Connect to your Galaxy server account\n\n\nYou are going to work as student pairs, each of these pairs having its own Galaxy account.\n\n\nAccount | server\n\n\nmg-1 | http://lbcd41.snv.jussieu.fr\n\n\nmg-2 | http://lbcd41.snv.jussieu.fr\n\n\nmg-3 | http://artbio.snv.jussieu.fr\n\n\nmg-4 | http://artbio.snv.jussieu.fr\n\n\nmg-5 | http://artbio.snv.jussieu.fr\n\n\nmg-6 | http://artbio.snv.jussieu.fr\n\n\nmg-7 | http://artbio.snv.jussieu.fr\n\n\nYour password will be communicated during the training session", 
+            "text": "Connect to your Galaxy server account\n\n\nYou are going to work as student pairs, each of these pairs having its own Galaxy account.\n\n\nAccount | server\n\n\nmg-1 | \nhttp://lbcd41.snv.jussieu.fr\n\n\nmg-2 | \nhttp://lbcd41.snv.jussieu.fr\n\n\nmg-3 | \nhttp://artbio.snv.jussieu.fr\n\n\nmg-4 | \nhttp://artbio.snv.jussieu.fr\n\n\nmg-5 | \nhttp://artbio.snv.jussieu.fr\n\n\nmg-6 | \nhttp://artbio.snv.jussieu.fr\n\n\nmg-7 | \nhttp://artbio.snv.jussieu.fr\n\n\nYour password will be communicated during the training session\n\n\nAt login, and before entering into the analysis, let's do the \"Galaxy tour\" !", 
             "title": "Trainee connection"
         }, 
         {
@@ -86,59 +86,89 @@
             "title": "mg-7 | http://artbio.snv.jussieu.fr"
         }, 
         {
+            "location": "/connection/#at-login-and-before-entering-into-the-analysis-lets-do-the-galaxy-tour", 
+            "text": "", 
+            "title": "At login, and before entering into the analysis, let's do the \"Galaxy tour\" !"
+        }, 
+        {
             "location": "/import/", 
-            "text": "Rename your history and import datasets", 
+            "text": "Prepare your input data history\n\n\n\n\nRename your \nUnnamed history\n to \nInput Dataset and collections\n\n\n\n\nGo to menu \nShared Data\n--\n \nData Libraries\n (\nDonn\u00e9es Partag\u00e9es\n --\n \nBiblioth\u00e8que de Donn\u00e9es\n)\n\n\n\n\n\n\n\nChoose \nMouse Genetics\n library\n\n\n\n\nSelect the 4 fastq files (A_R1.fastq, A_R2.fastq, B_R1.fastq and B_R2.fastq)\n\n\n\n\nSelect the \nTo History\n tab --\n \nas datasets\n\n\n\n\n\n\n\n\nSelect your freshly renamed \nInput Dataset and collections\n in the \nselect history\n menu\n\n\n\n\nClick \nImport\n button\n\n\nAfter the import, navigate directly to this history by clicking the \ngreen warning\n\n\n\n\nPrepare two \ncollections\n from your raw input datasets.\n\n\n\n\n\n\nToggle the \"checkbox\" mode by clicking the small checkbox icon at the top of the history bar\n\n\n\n\n\n\n\nSelect the 2 A fastq files OR the 2 B fasq files (not all 4 files, choose as you feel it!)\n\n\n\n\n\n\nSelect \nBuild List of Dataset Pairs\n from the tab \nPour toute la s\u00e9lection\n\n\n\n\n\n\n\n\nin the pop up window, replace \n_1\n by \n_R1\n and \n_2\n by \n_R2\n\n\n\n\n\n\nClick the \nPair these datasets\n tab\n\n\n\n\n\n\n\nName your new \"paired dataset\" collection with a single element \nA_fastq\n (or \nB_fastq\n\nif you chose the B fastq file at the previous step) and click on \nCreate list\n\n\n\n\n\n\nBack to your history, that is still in \"checkbox\" mode, select the 4 fastq files, and\nrepeat the operation to produce this time a collection of 2 paired-sequences element, which\nyou will name this time \npatient sequences\n\n\n\n\n\n\nTime to start the analysis:\nSelect the \nCopy datasets\nin the history \"wheel\" menu \n\n\n\n\n\n\n\nSelect the first collection with a single element (A or B) that you first prepared\n\n\n\n\nin the \ndestination history\n area, fill the \nNew history named\n field with \nSingle sequence dataset analysis\n\nand click the \nCopy History Items\n button\n\n\nClick the link that shows up to navigate directely to this new history !", 
             "title": "Import datasets"
         }, 
         {
-            "location": "/import/#rename-your-history-and-import-datasets", 
-            "text": "", 
-            "title": "Rename your history and import datasets"
+            "location": "/import/#prepare-your-input-data-history", 
+            "text": "Rename your  Unnamed history  to  Input Dataset and collections   Go to menu  Shared Data --   Data Libraries  ( Donn\u00e9es Partag\u00e9es  --   Biblioth\u00e8que de Donn\u00e9es )    Choose  Mouse Genetics  library   Select the 4 fastq files (A_R1.fastq, A_R2.fastq, B_R1.fastq and B_R2.fastq)   Select the  To History  tab --   as datasets     Select your freshly renamed  Input Dataset and collections  in the  select history  menu   Click  Import  button  After the import, navigate directly to this history by clicking the  green warning   Prepare two  collections  from your raw input datasets.    Toggle the \"checkbox\" mode by clicking the small checkbox icon at the top of the history bar    Select the 2 A fastq files OR the 2 B fasq files (not all 4 files, choose as you feel it!)    Select  Build List of Dataset Pairs  from the tab  Pour toute la s\u00e9lection     in the pop up window, replace  _1  by  _R1  and  _2  by  _R2    Click the  Pair these datasets  tab    Name your new \"paired dataset\" collection with a single element  A_fastq  (or  B_fastq \nif you chose the B fastq file at the previous step) and click on  Create list    Back to your history, that is still in \"checkbox\" mode, select the 4 fastq files, and\nrepeat the operation to produce this time a collection of 2 paired-sequences element, which\nyou will name this time  patient sequences    Time to start the analysis:\nSelect the  Copy datasets in the history \"wheel\" menu     Select the first collection with a single element (A or B) that you first prepared   in the  destination history  area, fill the  New history named  field with  Single sequence dataset analysis \nand click the  Copy History Items  button  Click the link that shows up to navigate directely to this new history !", 
+            "title": "Prepare your input data history"
         }, 
         {
             "location": "/BWA/", 
-            "text": "BWA alignment of reads", 
+            "text": "BWA alignment of reads\n\n\n\n\n\n\nSelect the BWA-MEM tool in the Galaxy tool bar\n\n\n\n\n\n\n\nFill the \nMap with BWA-MEM - map medium and long reads (\n 100 bp) against reference genome (Galaxy Version 0.7.17.1)\n\ntool form carefully:\n\n\n\n\n\n\nThere are 5 parameters to check !\n\n\n\n3. Click the \nrun\n button", 
             "title": "BWA mem tool"
         }, 
         {
             "location": "/BWA/#bwa-alignment-of-reads", 
-            "text": "", 
+            "text": "Select the BWA-MEM tool in the Galaxy tool bar    Fill the  Map with BWA-MEM - map medium and long reads (  100 bp) against reference genome (Galaxy Version 0.7.17.1) \ntool form carefully:    There are 5 parameters to check !  \n3. Click the  run  button", 
             "title": "BWA alignment of reads"
         }, 
         {
             "location": "/lumpy/", 
-            "text": "Lumpy tool - lumpy step", 
+            "text": "Lumpy tool - lumpy step\n\n\nNow you are going to analyse the BAM alignment file generated by BWA, using lumpy-sv.\n\n\nThe lumpy-sv tool analyse the alignments and search for\n\n\n\n\n\n\nsplit alignment\n\n\na read whose 5' and 3' parts map to non-contiguous regions\n\n\n\n\n\n\ndiscordant alignments of read pairs\n\n\nEither one mate maps to one chromosome and the other mate maps to another chromosome, or\nthe distance between the two mates is beyond what is statistically expected (the library fragment\nsize in average).  For an insertion, the distance increases, for a deletion, the distance decreases\n\n\n\n\n\n\nfrom, this parsing, lumpy then constructs models of break points that can explain its findings, and report these models\nin a vcf file (vcf stands for variant calling format), with statistical significance, number of evidences founds, etc...\n\n\n1. launch the lumpy-sv tool\n\n2. review the parameters:\n    - input(s) : One sample (because we are not comparing the alignments with a reference alignment)\n    - One BAM alignment file produced by BWA-mem: be sure to toggle the dataset collection mode\n    (arrow in the screen shot below).\n    - sequencing method: paired-end sequencing\n    - variant calling format: vcf\n\n3. run the tool !\n\n\n\n\n\n4. Look at the vcf returned by lumpy-sv.\n\n\n\nIt should be easy to read: lumpy output variation as a suite of single lines (for deletions, insertion, or SNPs), or\nas a suite of line pairs, for translocation (one line for the translocation, another line for the reciprocal translocation).\nNote that sometimes, there is evidence for one translocation, but not for the reciprocal event. Look at the ID column: a\npair of translocation event model will have for instance IDs and 2_1 and 2_2, respectively.\n\n\nHowever, the lumpy vcf format is not suitable for visualisation in a genome browser such as UCSC genome browser.\nFor these browser, lines have to be sorted in the order of chromosomes (first) and in the order of coordinates (secondly).\n\n\nThe next steps of the analysis are for reorganise the lumpy vcf output to follow these rules. Also, we are going to focus\non translocations, filtering out other variation we are not interested in.", 
             "title": "lumpy analysis"
         }, 
         {
             "location": "/lumpy/#lumpy-tool-lumpy-step", 
-            "text": "", 
+            "text": "Now you are going to analyse the BAM alignment file generated by BWA, using lumpy-sv.  The lumpy-sv tool analyse the alignments and search for    split alignment  a read whose 5' and 3' parts map to non-contiguous regions    discordant alignments of read pairs  Either one mate maps to one chromosome and the other mate maps to another chromosome, or\nthe distance between the two mates is beyond what is statistically expected (the library fragment\nsize in average).  For an insertion, the distance increases, for a deletion, the distance decreases    from, this parsing, lumpy then constructs models of break points that can explain its findings, and report these models\nin a vcf file (vcf stands for variant calling format), with statistical significance, number of evidences founds, etc...  1. launch the lumpy-sv tool\n\n2. review the parameters:\n    - input(s) : One sample (because we are not comparing the alignments with a reference alignment)\n    - One BAM alignment file produced by BWA-mem: be sure to toggle the dataset collection mode\n    (arrow in the screen shot below).\n    - sequencing method: paired-end sequencing\n    - variant calling format: vcf\n\n3. run the tool !   4. Look at the vcf returned by lumpy-sv.  It should be easy to read: lumpy output variation as a suite of single lines (for deletions, insertion, or SNPs), or\nas a suite of line pairs, for translocation (one line for the translocation, another line for the reciprocal translocation).\nNote that sometimes, there is evidence for one translocation, but not for the reciprocal event. Look at the ID column: a\npair of translocation event model will have for instance IDs and 2_1 and 2_2, respectively.  However, the lumpy vcf format is not suitable for visualisation in a genome browser such as UCSC genome browser.\nFor these browser, lines have to be sorted in the order of chromosomes (first) and in the order of coordinates (secondly).  The next steps of the analysis are for reorganise the lumpy vcf output to follow these rules. Also, we are going to focus\non translocations, filtering out other variation we are not interested in.", 
             "title": "Lumpy tool - lumpy step"
         }, 
         {
             "location": "/filter_vcf/", 
-            "text": "Filter and sort VCF\n\n\n1\n\n\n\n\n2\n\n\n\n\n3", 
+            "text": "Reformat the vcf output of lumpy-sv\n\n\n1. Save the header of the vcf\n\n\nThis is just done using the tool \nSelect lines that match an expression (Galaxy Version 1.0.1)\n with the parameter\n\n\n\n\nDataset collection\n\n\nSelect lines from: \n9: Variant Lumpy Calling\n\n\nthat: \nmatching\n\n\nthe pattern: \n^#\n\n\n\n\n\n\n2. Save the rest of the vcf file in another Dataset\n\n\nHere we use the same \nSelect lines that match an expression\n tools, this time with the parameters:\n\n\n\n\nSelect lines from: \n9: Variant Lumpy Calling\n\n\nthat: \nmatching\n\n\nthe pattern: \nSVTYPE=BND\n\n\n\n\nTIP !\n\n\nJust re-play the previous tool run, and just change the pattern from \n^#\n to \nSVTYPE=BND\n\n\n\n\nThis allows to kill two birds with the same stone:\n\n\n\n\nSelecting non-header part of the vcf\n\n\nfiltering out the variations that are not of type \nBND\n (Bondaries)\n\n\n\n\n3. Reorder the vcf lines in the previous dataset\n\n\nTo do that, we use the tool \nSort data in ascending or descending order (Galaxy Version 1.1.0)\n\n\n\n\nSort Query: \nDataset collection\n and \n16: Select on collection 9\n\n\nNumber of header lines: \n0\n\n\n1: Column selections\n\n\non column: \nColumn: 1\n\n\nin: \nAscending order\n\n\nFlavor: \nNatural / Version sort (-V)\n\n\n\n\n\n\n\n\n2: Column selections\n\n\n\n\non column: \nColumn: 2\n\n\nin: \nAscending order\n\n\nFlavor: \nFast numeric sort (-n)\n\n\n\n\n\n\n\n\nOutput unique values: No\n\n\n\n\nIgnore case: No\n\n\n\n\n\n\n4. Reassemble the saved header with the sorted/filtered vcf lines\n\n\nTo do that, we use the tool \nConcatenate datasets tail-to-head (Galaxy Version 1.0.0)\n\nPay extra attention to the version of the tool, because there is a number of concatenate tools with the same name.\n\n\n\n\nConcatenate Dataset: \nDataset collection\n and \n14: Select on collection 9\n\n\nClick on \n+ Insert Dataset\n to trigger an additional form section\n\n\nDataset: \nDataset collection\n and \n18: Sort on collection 16\n\n\n1: Column selections\n\n\n\n\n\n\n4. Rename the dataset within the last dataset collection.\n\n\nHere we will rename the dataset of the last dataset collection. Here, there is something that maybe\ntricky to understand.\n\n\nA dataset collection is a kind of dictionary whose elements, the datasets, have as labels the key of this dictionary.\nHowever, the real name of this dataset is hidden.\n\n\nTo see the real name of the dataset, navigate in the last collection (click on it) and further click the pencil icone.\n\n\n\n\nHere you can change the real name of the dataset, which is useful for the next step of visualisation in Genome Browser\n\n\nRename it as \npatient A vcf\n or \npatient B vcf\n and click \nSave", 
             "title": "Filter VCF file for visualization"
         }, 
         {
-            "location": "/filter_vcf/#filter-and-sort-vcf", 
+            "location": "/filter_vcf/#reformat-the-vcf-output-of-lumpy-sv", 
             "text": "", 
-            "title": "Filter and sort VCF"
+            "title": "Reformat the vcf output of lumpy-sv"
         }, 
         {
-            "location": "/filter_vcf/#1", 
-            "text": "", 
-            "title": "1"
+            "location": "/filter_vcf/#1-save-the-header-of-the-vcf", 
+            "text": "This is just done using the tool  Select lines that match an expression (Galaxy Version 1.0.1)  with the parameter   Dataset collection  Select lines from:  9: Variant Lumpy Calling  that:  matching  the pattern:  ^#", 
+            "title": "1. Save the header of the vcf"
         }, 
         {
-            "location": "/filter_vcf/#2", 
-            "text": "", 
-            "title": "2"
+            "location": "/filter_vcf/#2-save-the-rest-of-the-vcf-file-in-another-dataset", 
+            "text": "Here we use the same  Select lines that match an expression  tools, this time with the parameters:   Select lines from:  9: Variant Lumpy Calling  that:  matching  the pattern:  SVTYPE=BND", 
+            "title": "2. Save the rest of the vcf file in another Dataset"
         }, 
         {
-            "location": "/filter_vcf/#3", 
-            "text": "", 
-            "title": "3"
+            "location": "/filter_vcf/#tip", 
+            "text": "Just re-play the previous tool run, and just change the pattern from  ^#  to  SVTYPE=BND   This allows to kill two birds with the same stone:   Selecting non-header part of the vcf  filtering out the variations that are not of type  BND  (Bondaries)", 
+            "title": "TIP !"
+        }, 
+        {
+            "location": "/filter_vcf/#3-reorder-the-vcf-lines-in-the-previous-dataset", 
+            "text": "To do that, we use the tool  Sort data in ascending or descending order (Galaxy Version 1.1.0)   Sort Query:  Dataset collection  and  16: Select on collection 9  Number of header lines:  0  1: Column selections  on column:  Column: 1  in:  Ascending order  Flavor:  Natural / Version sort (-V)     2: Column selections   on column:  Column: 2  in:  Ascending order  Flavor:  Fast numeric sort (-n)     Output unique values: No   Ignore case: No", 
+            "title": "3. Reorder the vcf lines in the previous dataset"
+        }, 
+        {
+            "location": "/filter_vcf/#4-reassemble-the-saved-header-with-the-sortedfiltered-vcf-lines", 
+            "text": "To do that, we use the tool  Concatenate datasets tail-to-head (Galaxy Version 1.0.0) \nPay extra attention to the version of the tool, because there is a number of concatenate tools with the same name.   Concatenate Dataset:  Dataset collection  and  14: Select on collection 9  Click on  + Insert Dataset  to trigger an additional form section  Dataset:  Dataset collection  and  18: Sort on collection 16  1: Column selections", 
+            "title": "4. Reassemble the saved header with the sorted/filtered vcf lines"
+        }, 
+        {
+            "location": "/filter_vcf/#4-rename-the-dataset-within-the-last-dataset-collection", 
+            "text": "Here we will rename the dataset of the last dataset collection. Here, there is something that maybe\ntricky to understand.  A dataset collection is a kind of dictionary whose elements, the datasets, have as labels the key of this dictionary.\nHowever, the real name of this dataset is hidden.  To see the real name of the dataset, navigate in the last collection (click on it) and further click the pencil icone.   Here you can change the real name of the dataset, which is useful for the next step of visualisation in Genome Browser  Rename it as  patient A vcf  or  patient B vcf  and click  Save", 
+            "title": "4. Rename the dataset within the last dataset collection."
+        }, 
+        {
+            "location": "/coverage/", 
+            "text": "Read Coverage using the Bamcoverage tool\n\n\nSelect the tool \nbamCoverage generates a coverage bigWig file from a given BAM or CRAM file (Galaxy Version 3.1.2.0.0)\n\n\n\n\nBAM/CRAM file: \nDataset Collection\n and \nMap with BWA-MEM on collection 3 (mapped reads in BAM format)\n\n\nBin size in bases: \n100\n\n\nScaling/Normalization method: Do not normalize or scale\n\n\nCoverage file format: \nbigWig\n\n\nCompute an exact scaling factor: \nno\n\n\nRegion of the genome to limit the operation to: \nchr9\n\n\nShow advanced options: \nyes\n\n\nIgnore missing data?: \nyes\n\n\n\n\nOther options unchanged\n\n\n\n\n\n\nrun the tool\n\n\n\n\n\n\nrerun the tool paying attention to\n\n\n\n\nreselect BAM/CRAM file: \nDataset Collection\n and \nMap with BWA-MEM on collection 3 (mapped reads in BAM format)\n\n\n\n\n\n\nRegion of the genome to limit the operation to: \nchr22", 
+            "title": "Compute genome coverage"
+        }, 
+        {
+            "location": "/coverage/#read-coverage-using-the-bamcoverage-tool", 
+            "text": "Select the tool  bamCoverage generates a coverage bigWig file from a given BAM or CRAM file (Galaxy Version 3.1.2.0.0)   BAM/CRAM file:  Dataset Collection  and  Map with BWA-MEM on collection 3 (mapped reads in BAM format)  Bin size in bases:  100  Scaling/Normalization method: Do not normalize or scale  Coverage file format:  bigWig  Compute an exact scaling factor:  no  Region of the genome to limit the operation to:  chr9  Show advanced options:  yes  Ignore missing data?:  yes   Other options unchanged    run the tool    rerun the tool paying attention to   reselect BAM/CRAM file:  Dataset Collection  and  Map with BWA-MEM on collection 3 (mapped reads in BAM format)    Region of the genome to limit the operation to:  chr22", 
+            "title": "Read Coverage using the Bamcoverage tool"
         }, 
         {
             "location": "/workflow/", 
@@ -169,16 +199,6 @@
             "location": "/run_workflow/#run-workflow", 
             "text": "", 
             "title": "Run Workflow"
-        }, 
-        {
-            "location": "/coverage/", 
-            "text": "Read Coverage using the Bamcoverage tool", 
-            "title": "Compute genome coverage"
-        }, 
-        {
-            "location": "/coverage/#read-coverage-using-the-bamcoverage-tool", 
-            "text": "", 
-            "title": "Read Coverage using the Bamcoverage tool"
         }, 
         {
             "location": "/visualisation/", 

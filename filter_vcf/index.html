@@ -87,20 +87,29 @@
     <a class="current" href="./">Filter VCF file for visualization</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#filter-and-sort-vcf">Filter and sort VCF</a></li>
+    <li class="toctree-l2"><a href="#reformat-the-vcf-output-of-lumpy-sv">Reformat the vcf output of lumpy-sv</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#1">1</a></li>
+            <li><a class="toctree-l3" href="#1-save-the-header-of-the-vcf">1. Save the header of the vcf</a></li>
         
-            <li><a class="toctree-l3" href="#2">2</a></li>
+            <li><a class="toctree-l3" href="#2-save-the-rest-of-the-vcf-file-in-another-dataset">2. Save the rest of the vcf file in another Dataset</a></li>
         
-            <li><a class="toctree-l3" href="#3">3</a></li>
+            <li><a class="toctree-l3" href="#3-reorder-the-vcf-lines-in-the-previous-dataset">3. Reorder the vcf lines in the previous dataset</a></li>
+        
+            <li><a class="toctree-l3" href="#4-reassemble-the-saved-header-with-the-sortedfiltered-vcf-lines">4. Reassemble the saved header with the sorted/filtered vcf lines</a></li>
+        
+            <li><a class="toctree-l3" href="#4-rename-the-dataset-within-the-last-dataset-collection">4. Rename the dataset within the last dataset collection.</a></li>
         
         </ul>
     
 
     </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../coverage/">Compute genome coverage</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -111,11 +120,6 @@
             <li class="toctree-l1">
 		
     <a class="" href="../run_workflow/">Run the workflow</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../coverage/">Compute genome coverage</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -155,13 +159,75 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="filter-and-sort-vcf">Filter and sort VCF</h2>
-<h3 id="1">1</h3>
+                <h2 id="reformat-the-vcf-output-of-lumpy-sv">Reformat the vcf output of lumpy-sv</h2>
+<h3 id="1-save-the-header-of-the-vcf">1. Save the header of the vcf</h3>
+<p>This is just done using the tool <code>Select lines that match an expression (Galaxy Version 1.0.1)</code> with the parameter</p>
+<ul>
+<li><code>Dataset collection</code></li>
+<li>Select lines from: <code>9: Variant Lumpy Calling</code></li>
+<li>that: <code>matching</code></li>
+<li>the pattern: <code>^#</code></li>
+</ul>
 <p><img alt="" src="../images/filter.png" /></p>
-<h3 id="2">2</h3>
+<h3 id="2-save-the-rest-of-the-vcf-file-in-another-dataset">2. Save the rest of the vcf file in another Dataset</h3>
+<p>Here we use the same <code>Select lines that match an expression</code> tools, this time with the parameters:</p>
+<ul>
+<li>Select lines from: <code>9: Variant Lumpy Calling</code></li>
+<li>that: <code>matching</code></li>
+<li>the pattern: <code>SVTYPE=BND</code></li>
+</ul>
+<h5 id="tip">TIP !</h5>
+<p>Just re-play the previous tool run, and just change the pattern from <code>^#</code> to <code>SVTYPE=BND</code></p>
+<p><img alt="" src="../images/filter2.png" /></p>
+<p>This allows to kill two birds with the same stone:</p>
+<ul>
+<li>Selecting non-header part of the vcf</li>
+<li>filtering out the variations that are not of type <code>BND</code> (Bondaries)</li>
+</ul>
+<h3 id="3-reorder-the-vcf-lines-in-the-previous-dataset">3. Reorder the vcf lines in the previous dataset</h3>
+<p>To do that, we use the tool <code>Sort data in ascending or descending order (Galaxy Version 1.1.0)</code></p>
+<ul>
+<li>Sort Query: <code>Dataset collection</code> and <code>16: Select on collection 9</code></li>
+<li>Number of header lines: <code>0</code></li>
+<li>1: Column selections<ul>
+<li>on column: <code>Column: 1</code></li>
+<li>in: <code>Ascending order</code></li>
+<li>Flavor: <code>Natural / Version sort (-V)</code></li>
+</ul>
+</li>
+<li>
+<p>2: Column selections</p>
+<ul>
+<li>on column: <code>Column: 2</code></li>
+<li>in: <code>Ascending order</code></li>
+<li>Flavor: <code>Fast numeric sort (-n)</code></li>
+</ul>
+</li>
+<li>
+<p>Output unique values: No</p>
+</li>
+<li>Ignore case: No</li>
+</ul>
 <p><img alt="" src="../images/sort.png" /></p>
-<h3 id="3">3</h3>
-<p><img alt="" src="../images/rename_dataset.png" /></p>
+<h3 id="4-reassemble-the-saved-header-with-the-sortedfiltered-vcf-lines">4. Reassemble the saved header with the sorted/filtered vcf lines</h3>
+<p>To do that, we use the tool <code>Concatenate datasets tail-to-head (Galaxy Version 1.0.0)</code>
+Pay extra attention to the version of the tool, because there is a number of concatenate tools with the same name.</p>
+<ul>
+<li>Concatenate Dataset: <code>Dataset collection</code> and <code>14: Select on collection 9</code></li>
+<li>Click on <code>+ Insert Dataset</code> to trigger an additional form section</li>
+<li>Dataset: <code>Dataset collection</code> and <code>18: Sort on collection 16</code></li>
+<li>1: Column selections</li>
+</ul>
+<p><img alt="" src="../images/concatenate.png" /></p>
+<h3 id="4-rename-the-dataset-within-the-last-dataset-collection">4. Rename the dataset within the last dataset collection.</h3>
+<p>Here we will rename the dataset of the last dataset collection. Here, there is something that maybe
+tricky to understand.</p>
+<p>A dataset collection is a kind of dictionary whose elements, the datasets, have as labels the key of this dictionary.
+However, the real name of this dataset is hidden.</p>
+<p>To see the real name of the dataset, navigate in the last collection (click on it) and further click the pencil icone.</p>
+<p><img alt="" src="../images/rename.png" /></p>
+<p>Here you can change the real name of the dataset, which is useful for the next step of visualisation in Genome Browser</p>
+<p>Rename it as <code>patient A vcf</code> or <code>patient B vcf</code> and click <code>Save</code></p>
               
             </div>
           </div>
@@ -169,7 +235,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../workflow/" class="btn btn-neutral float-right" title="Generate workflow from history">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../coverage/" class="btn btn-neutral float-right" title="Compute genome coverage">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../lumpy/" class="btn btn-neutral" title="lumpy analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -201,7 +267,7 @@
         <span><a href="../lumpy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../workflow/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../coverage/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
