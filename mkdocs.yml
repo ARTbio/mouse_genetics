@@ -8,8 +8,8 @@ pages:
  - BWA mem tool: BWA.md
  - lumpy analysis: lumpy.md
  - Filter VCF file for visualization: filter_vcf.md
+ - Compute genome coverage: coverage.md
  - Generate workflow from history: workflow.md
  - Run the workflow: run_workflow.md
- - Compute genome coverage: coverage.md
  - Visualisation in UCSC Genome Browser: visualisation.md
 theme: readthedocs
